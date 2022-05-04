@@ -1,0 +1,330 @@
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+/* main */
+/* navbar */
+hr.top {
+  border: 2px solid rgb(164, 48, 63);
+  margin: 0px;
+  padding: 0px;
+  opacity: 100%;
+  background-color: rgb(164, 48, 63);
+}
+.row-navbar {
+  width: 100%;
+}
+.nav-item {
+  margin-bottom: 0% !important;
+}
+
+.navbar {
+  margin-top: 0.5rem !important;
+}
+
+.navbar-btn {
+  min-width: 15vh;
+  max-width: 15vh;
+  font-size: large !important;
+
+  background: transparent !important;
+  border: none !important;
+
+  position: relative;
+  transition: 0.3s;
+  padding: 10px;
+  color: rgb(164, 48, 63) !important;
+  font-weight: bold !important;
+}
+.navbar-btn:before {
+  content: "";
+  border-bottom: 1px solid rgb(164, 48, 63);
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  transition: 0.3s;
+}
+.navbar-btn:hover:before {
+  width: 100%;
+  padding: 0;
+}
+
+/* navbar */
+/* main */
+/* calendar */
+/* rows columns */
+.row_calendar {
+  height: 90vh !important;
+  padding: 1% !important;
+}
+
+.toggle_modal {
+  position: center !important;
+}
+.button-toggle-modal {
+  text-align: center;
+  /* margin-left: 35%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-task-modal {
+  text-align: center;
+  margin: 0;
+  padding-right: 10% !important;
+  padding-left: 10% !important;
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+  /* min-width: 80px; */
+  max-width: 80px;
+
+  font-size: 1vw !important;
+}
+
+/* .row-right-calendar {
+  padding-bottom: 12%;
+} */
+.card-header {
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.card_tasks {
+  font-size: 1vw !important;
+}
+.card_tasks_header {
+  /* font-size: 1.5vw !important; */
+  font-weight: bold !important;
+  /* color: rgb(164, 48, 63); */
+  display: flex;
+  justify-content: center !important;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+/* rows columns */
+
+/* presets table */
+.card_presets {
+  margin-top: 5%;
+  /* margin-left: 1%; */
+  width: 100%;
+}
+.presets_card {
+  margin-bottom: 0% !important;
+  padding-bottom: 0% !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* presets table */
+
+/* table */
+.table {
+  font-size: 1vw;
+  text-align: center;
+}
+
+.my-custom-scrollbar {
+  height: 80vh !important;
+  overflow: scroll;
+}
+
+.my-custom-scrollbar2 {
+  height: 85%;
+  overflow: scroll;
+}
+.row-data {
+  margin-top: 0% !important;
+}
+
+/* table */
+
+/* modal */
+.toggle-button {
+  min-width: 100px !important;
+  max-width: 100px !important;
+  font-size: 1vw !important;
+  text-align: center !important;
+}
+
+.toggle-button:active {
+  background: rgb(164, 48, 63) !important;
+  color: white !important;
+}
+
+.toggle-button:focus {
+  background: rgb(164, 48, 63) !important;
+  color: white !important;
+}
+
+/* .color-picker-box {
+  height: 40px;
+  width: 60px !important;
+  padding: 0% !important;
+  margin: 0% !important;
+} */
+
+/* modal */
+/* calendar */
+/* budget */
+.budget-form {
+  /* position: center; */
+  padding-top: 10px !important;
+  /* padding: 15px; */
+
+  margin-left: 15px !important;
+}
+input {
+  width: 100px;
+}
+
+.budget-card {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+/*collapse budget % */
+.calculatePercentForm {
+  font-size: small;
+}
+.calculatePercent {
+  /* width: 50% !important; */
+  padding-left: 10%;
+  vertical-align: top;
+}
+.border-danger {
+  border: rgb(164, 48, 63);
+}
+.btn-outline-danger {
+  border: rgb(164, 48, 63);
+  color: rgb(164, 48, 63);
+}
+
+.form-budget-card {
+  float: right;
+}
+
+.table tbody tr.highlight td {
+  background-color: rgba(164, 48, 63, 0.763);
+  color: whitesmoke !important;
+  text-decoration: solid !important;
+}
+
+.btn-block {
+  font-size: 1vw !important;
+  /* font-size: calc(10px + 1vw); */
+
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+
+  min-width: 100% !important;
+  min-height: 5% !important;
+
+  max-width: 100% !important;
+  /* max-height: 5% !important; */
+}
+
+/* chart */
+.chart-container {
+  margin: -10px !important;
+  padding: -10px !important;
+  height: 100%;
+  width: 50vw;
+}
+.myChart {
+  width: 900px !important;
+  height: 100% !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+
+  padding-top: 10px !important;
+}
+/* chart */
+/* 123 */
+.closebtn:hover .bi-x-circle,
+.closebtn .bi-x-circle-fill {
+  display: none;
+  opacity: 100%;
+}
+.closebtn:hover .bi-x-circle-fill {
+  display: inline;
+}
+.closebtn {
+  fill: rgb(164, 48, 63);
+  width: 25px;
+}
+
+.hello {
+  text-decoration: none !important;
+  color: rgb(132, 132, 132);
+  /* font-weight: bold !important; */
+}
+/* .hello:hover {
+  text-decoration: none !important;
+  color: rgb(60, 60, 60);
+  font-weight: bold !important;
+} */
+.navbar-link {
+  padding-top: 1%;
+}
+/* .btn-outline-danger,
+.btn-outline-danger:hover,
+.btn-outline-danger:active,
+.btn-outline-danger:visited {
+  background-color: rgb(164, 48, 63) !important;
+  transition: 0.3s; */
+
+/* .btn-outline-danger {
+  background-color: rgb(164, 48, 63) !important;
+} */
+
+.btn-event {
+  text-align: left;
+  margin: 5% !important;
+}
+.color {
+  margin: 1% !important;
+}
+.preset_text {
+  color: white;
+  font-size: 1vw;
+  text-shadow: -1px 1px 0 #3b3b3b, 1px 1px 0 #3b3b3b, 1px -1px 0 #3b3b3b, -1px -1px 0 #3b3b3b;
+}
+
+.container_main {
+  max-width: 90% !important;
+}
+
+.close_toggal {
+  fill: rgb(164, 48, 63);
+  width: 60px;
+  opacity: 100%;
+}
+
+.modal_title {
+  color: rgb(164, 48, 63);
+  font-size: 1.5vw !important;
+}
+
+.btn-danger-custom {
+  background-color: rgb(164, 48, 63) !important;
+  color: white !important;
+  text-decoration: solid !important;
+  transition: 0.3s !important;
+}
+.btn-danger-custom:hover {
+  background-color: whitesmoke !important;
+  color: rgb(164, 48, 63) !important;
+  transition: 0.3s;
+  border-color: rgb(164, 48, 63) !important;
+  font-weight: bold !important;
+  border-width: thick !important;
+}
+
+.events {
+  color: rgb(164, 48, 63) !important;
+  text-decoration: solid;
+}
+
+.custom-header {
+  color: rgb(164, 48, 63) !important;
+  text-decoration: solid;
+}
