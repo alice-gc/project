@@ -122,6 +122,28 @@
        </div>
     </div>
 
+<div class="row">
+  <div class="class">
+
+
+
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @endsection
 
 <style>

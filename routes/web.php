@@ -91,5 +91,20 @@ Route::put('/tasks/{task}', [TaskController::class , 'update'])->name('tasks.upd
 Route::post('/statuses', [TaskController::class , 'store'])->name('statuses.store');
 Route::put('/statuses', [TaskController::class , 'update'])->name('statuses.update');
 
-
 Route::get('/budgets', [BudgetController::class , 'getBudgets'])->name('api.budgets.index');
+// 
+
+
+
+
+
+
+
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+
+Route::get('/original-budget', [BudgetController::class , 'index_old'])->name('budget-old.index');
+
+Route::post('/original-budget', [BudgetController::class , 'store2'])->name('budget-old.store');

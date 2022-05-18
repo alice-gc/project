@@ -11,6 +11,7 @@ class Budget extends Model
     //public $timestamps = false;
 
     use HasFactory;
+    public $timestamps = FALSE;
 
     protected $fillable = [
         'name',

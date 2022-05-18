@@ -27,6 +27,7 @@ class StoreBudgetRequest extends FormRequest
         return [
 
             'name' => 'required',
+            'income' => 'required|integer',
             'house' => 'required|integer|between:1,99',
             'food' => 'required|integer|between:1,99',
             'transport' => 'required|integer|between:1,99',

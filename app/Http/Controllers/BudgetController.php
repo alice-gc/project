@@ -43,6 +43,30 @@ class BudgetController extends Controller
 
     }
 
+    public function index_old()
+    {
+        if (!Auth::check()) {
+            return view('fragments/homepage');
+        }
+
+
+        if (auth()->user() != Null) {
+            $user = Auth::id();
+
+            $budget = Auth::user()->budgets;
+
+            return view('/fragments/original-budget', compact('budget', 'user'));
+        }
+        else {
+            $user = Null;
+            $budget = Null;
+            return view('/fragments/original-budget', compact('budget', 'user'));
+        }
+
+
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -63,7 +87,7 @@ class BudgetController extends Controller
     {
 
 
-        $user_id = Auth::user()->id();
+        // $user_id = Auth::user()->id();
         $request->validated();
 
         Budget::updateOrCreate([
@@ -74,12 +98,36 @@ class BudgetController extends Controller
             'transport' => request('transport'),
             'personal' => request('personal'),
             'entertainment' => request('entertainment'),
-            'user_id' => $user_id,
+            'user_id' => request('user_id'),
         ]);
 
         //print all stuff from database
         // return redirect()->route('budget.index');
         return response()->json(['success' => 'Budget has been successfully added'], 200);
+    }
+
+    public function store2(StoreBudgetRequest $request)
+    {
+
+
+        // $user_id = Auth::user()->id();
+        $request->validated();
+
+        Budget::updateOrCreate([
+            'name' => request('name')
+        ], [
+            'house' => request('house'),
+            'income' => request('income'),
+            'food' => request('food'),
+            'transport' => request('transport'),
+            'personal' => request('personal'),
+            'entertainment' => request('entertainment'),
+            'user_id' => request('user_id'),
+        ]);
+
+        //print all stuff from database
+        // return redirect()->route('budget.index');
+        return redirect()->route('budget-old.index');
     }
 
     /**

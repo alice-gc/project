@@ -25,4 +25,9 @@ class PagesController extends Controller
     {
         return view("/fragments/homepage");
     }
+
+    public function budget_old()
+    {
+        return view("/fragments/original-budget");
+    }
 }

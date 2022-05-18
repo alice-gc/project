@@ -11,6 +11,18 @@
     @if($errors->has('name'))
     <div class="error alert alert-danger">{{ $errors->first('name') }}</div>
 @endif
+
+  <div class="form-group row">
+    <div class="col-sm-6">
+        <label for="income" class="col-form-label">total monthly income</label>
+    </div>
+    <div class="col-sm-6">
+      <input type="text" name="income" class="form-control" id="income" value="1500" placeholder="Enter the income number">
+    </div>
+  </div>
+    @if($errors->has('name'))
+    <div class="error alert alert-danger">{{ $errors->first('name') }}</div>
+@endif
    <hr>
   <div class="form-group row">
     <div class="col-8">
