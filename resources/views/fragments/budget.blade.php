@@ -117,7 +117,7 @@
     @else
     
       @include('components.budget.budgetSide')
-
+<a href="{{ route('budget-old.index') }}">non-vue</a>
         {{-- @include('fragments.original-budget') --}}
 
         <budget-vue> </budget-vue>

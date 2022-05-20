@@ -25,12 +25,21 @@
 @endif
    <hr>
   <div class="form-group row">
-    <div class="col-8">
-        <label for="house" class="col-form-label">RENT OR MORTGAGE: 25-35%</label>
+    <div class="col-6">
+        <label for="house" class="col-form-label">Rent or Mortage: 25-35</label>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-2">
       <input type="numeric" name="house" class="form-control" id="house" value="25" placeholder="house">
     </div>
+        <div class="col-sm-1">
+        %
+        </div>
+        <div class="col-sm-2">
+      <input type="numeric" name="house" class="form-control" id="house" value="25" placeholder="house" readonly>
+    </div>
+            <div class="col-sm-1">
+        @
+        </div>
   </div>
       @if($errors->has('house'))
     <div class="error alert alert-danger">{{ $errors->first('house') }}</div>
@@ -78,7 +87,18 @@
   </div>
         @if($errors->has('entertainment'))
     <div class="error alert alert-danger">{{ $errors->first('entertainment') }}</div>
-@endif
+        @endif
+ <div class="form-group row">
+    <div class="col-sm-8">
+        <label for="savings" class="col-form-label">Savings: > 10%</label>
+    </div>
+    <div class="col-sm-4">
+      <input type="numeric" name="savings" class="form-control" id="savings" value="25" placeholder="savings" readonly>
+    </div>
+  </div>
+        @if($errors->has('entertainment'))
+    <div class="error alert alert-danger">{{ $errors->first('entertainment') }}</div>
+        @endif
     <div class="form-group row">
     <div class="col-sm-8">
         <label for="default" class="col-form-label">Default expense: </label>
